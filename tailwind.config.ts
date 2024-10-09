@@ -11,7 +11,6 @@ const config: Config = {
       fontFamily: {
         soehne: ['Soehne', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
-
       },
       colors: {
         background: "var(--background)",
