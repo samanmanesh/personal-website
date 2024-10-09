@@ -10,6 +10,8 @@ const config: Config = {
     extend: {
       fontFamily: {
         soehne: ['Soehne', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+
       },
       colors: {
         background: "var(--background)",
