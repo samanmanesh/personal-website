@@ -1,9 +1,14 @@
+import { cn } from '@/app/utils/cn'
 import React from 'react'
 
 
-const SelectedProject = () => {
+type SelectedProjectProps = {
+  className?: string
+}
+
+const SelectedProject = ({className}: SelectedProjectProps) => { 
   return (
-    <section className='flex flex-col gap-6 mt-11'>
+    <section className={cn('flex flex-col gap-7 ', className)}>
     <h2 className='font-inter font-medium text-base'>
       Selected Project
     </h2>
