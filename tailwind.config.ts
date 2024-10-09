@@ -9,12 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        soehne: ['Soehne', 'sans-serif'],
+        sohne: ['Sohne', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
       },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        accent: "var(--accent)",
+        muted: "var(--muted)",
+        error: "var(--error)",
       },
     },
   },

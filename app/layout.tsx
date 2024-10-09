@@ -36,7 +36,7 @@ export default function RootLayout({
         <link rel="icon" href="/personal-log.ico" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-soehne`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased font-sohne`}
       >
         {children}
       </body>
