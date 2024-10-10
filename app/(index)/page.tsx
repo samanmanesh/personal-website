@@ -1,3 +1,4 @@
+import Experiences from "./components/Experiences";
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
 import SelectedProject from "./components/SelectedProject";
@@ -10,6 +11,7 @@ export default function Home() {
         <Intro className="mb-16" />
         <SelectedProject className="mb-16" />
         <Projects className="mb-16" />
+        <Experiences className="mb-16" />
       </section>
     </main>
   );
