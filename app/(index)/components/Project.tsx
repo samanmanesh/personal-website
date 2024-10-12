@@ -17,7 +17,7 @@ const Project = ({ title, describe, link, icon }: ProjectProps) => {
         <div className="font-inter font-medium text-base  decoration-secondary flex items-center justify-between gap-2 border-b border-secondary mr-auto ">
           <span>{title}</span>
 
-          {icon && <ArrowIcon />}
+          {icon && <ArrowIcon  className="dark:fill-white fill-secondary"/>}
         </div>
         <p className="text-base text-secondary font-normal">{describe}</p>
       </div>

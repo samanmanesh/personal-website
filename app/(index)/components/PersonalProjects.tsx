@@ -25,7 +25,7 @@ const projects = [
 
 const PersonalProjects = (className: PersonalProjectsProps) => {
   return (
-    <div className={cn("flex flex-col gap-7", className)}>
+    <div className={cn("flex flex-col gap-6", className)}>
       <h3 className="font-sohne text-sm text-secondary font-normal">Personal</h3>
       <section className="flex flex-col gap-7">
         {projects.map((data, index) => (
