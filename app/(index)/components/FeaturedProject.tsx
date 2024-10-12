@@ -6,12 +6,10 @@ type SelectedProjectProps = {
   className?: string
 }
 
-const SelectedProject = ({className}: SelectedProjectProps) => { 
+const FeaturedProject = ({className}: SelectedProjectProps) => { 
   return (
     <section className={cn('flex flex-col gap-7 ', className)}>
-    <h2 className='font-inter font-medium text-base'>
-      Selected Project
-    </h2>
+    <h3 className="font-sohne text-sm text-secondary font-normal">Featured</h3>
     {/* video */}
     <div className='relative w-full  rounded-md border border-[#E8E8E8] dark:border-none aspect-video'>
       <video className='w-full h-full object-cover' autoPlay loop muted>
@@ -25,4 +23,4 @@ const SelectedProject = ({className}: SelectedProjectProps) => {
   )
 }
 
-export default SelectedProject
+export default FeaturedProject
