@@ -13,7 +13,7 @@ const QAndAIData = {
 
 export default function QAndAI() {
   return (
-    <section className="h-full md:w-2/5 text-primary dark:text-white flex flex-col gap-16">
+    <section className=" mb-16 h-full md:w-2/5 text-primary dark:text-white flex flex-col gap-16">
       <div className="flex flex-col gap-1">
         <h1 className="font-inter font-medium text-lg ">{QAndAIData.title}</h1>
         <span className="text-secondary">{QAndAIData.date}</span>
@@ -39,6 +39,12 @@ export default function QAndAI() {
           </a>
         </span>
       </section>
+      {/* video */}
+      <div className="relative w-full  rounded-md border border-[#E8E8E8] dark:border-none aspect-video">
+        <video className="w-full h-full object-cover" autoPlay loop muted>
+          <source src="/videos/selected-project.mp4" type="video/mp4" />
+        </video>
+      </div>
     </section>
   );
 }
