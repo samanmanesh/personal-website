@@ -1,3 +1,4 @@
+import { Newsreader } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import "./styles/fonts.css";
@@ -11,6 +12,17 @@ const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
+});
+
+const sohne = localFont({
+  src: "./fonts/Sohne-Regular.otf",
+  variable: "--font-sohne",
+  weight: "100 900",
+});
+
+const newsreader = Newsreader({
+  subsets: ["latin"],
+  variable: "--font-newsreader",
 });
 
 export const metadata = {
@@ -36,7 +48,7 @@ export default function RootLayout({
         <link rel="icon" href="/personal-log.ico" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-sohne`}
+        className={`${geistSans.variable} ${geistMono.variable} ${newsreader.variable} ${sohne.variable} antialiased font-sohne`}
       >
         {children}
       </body>

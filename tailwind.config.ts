@@ -11,6 +11,7 @@ const config: Config = {
       fontFamily: {
         sohne: ['Sohne', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
+        newsreader: ['Newsreader', 'serif'],
       },
       colors: {
         background: "var(--background)",
