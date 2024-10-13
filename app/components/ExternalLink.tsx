@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { cn } from "../utils/cn";
 import * as Tooltip from "@radix-ui/react-tooltip";
@@ -15,7 +15,7 @@ import ArrowRightIcon from "../assets/ArrowRightIcon";
 type ExternalLinkProps = {
   href: string;
   imageHref?: string;
-  internalLink?: boolean;
+  internalLink?: string;
 } & React.HTMLAttributes<HTMLAnchorElement>;
 
 export const ExternalLink = ({
@@ -26,7 +26,7 @@ export const ExternalLink = ({
   ...props
 }: ExternalLinkProps) => {
   const [copied, setCopied] = useState(false);
-  // const router = useRouter();
+  const router = useRouter();
   const showTooltipPanel =
     !!imageHref ||
     props.href.includes("mailto") ||
@@ -36,7 +36,7 @@ export const ExternalLink = ({
       if (props.href.startsWith("http")) {
         window.open(props.href, "_blank");
       } else {
-        // router.push(props.href);
+        router.push(props.href);
       }
     }
   };
@@ -60,7 +60,7 @@ export const ExternalLink = ({
         <Tooltip.Portal>
           <Tooltip.Content
             className={cn(
-              " select-none rounded-md bg-white group aspect-video w-72 border p-2 "
+              " select-none rounded-md bg-white group aspect-video w-56 border p-2 "
             )}
             sideOffset={5}
           >
@@ -69,29 +69,38 @@ export const ExternalLink = ({
                 <div className="absolute w-full h-full">
                   <Image
                     src={imageHref}
+                    alt={"Preview image for given link"}
                     layout="fill"
                     objectFit="cover"
-                    className="rounded-md"
-                    alt={""}
+                    placeholder="blur"
+                    blurDataURL={imageHref}
+                    className="rounded-md object-cover w-full h-full transition-all group-hover:scale-105 ease-spring duration-300 group-hover:blur-sm"
                   />
                 </div>
               )}
 
-              <div className="group-hover:flex hidden items-center  filter backdrop-blur-lg gap-6">
-                <button className=" border-b border-black  text-base flex gap-2 items-center ">
-                  Visit{" "}
-                  <ArrowRightIcon className="fill-black dark:fill-white " />
-                </button>
+              <div className="group-hover:flex hidden items-center relative   text-white gap-6">
+                {props.href && (
+                  <button
+                    className=" border-b border-white text-base flex gap-2 items-center "
+                    onClick={navigate}
+                  >
+                    Visit{" "}
+                    <ArrowRightIcon className="fill-white dark:fill-white " />
+                  </button>
+                )}
 
-                <button className=" border-b border-black text-base ">
-                  More
-                </button>
+                {internalLink && (
+                  <Link href={internalLink}>
+                    <button className=" border-b border-white text-base ">
+                      More
+                    </button>
+                  </Link>
+                )}
               </div>
             </div>
 
             <div className="flex flex-col gap-2"></div>
-
-            <Tooltip.Arrow className="fill-white" />
           </Tooltip.Content>
         </Tooltip.Portal>
       </Tooltip.Root>
