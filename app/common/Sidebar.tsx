@@ -17,8 +17,8 @@ const Sidebar = (props: Props) => {
       href={"/"}
     >
       <button className="flex gap-2 items-center hover:scale-95 transition ease-in-out hover:opacity-98 cursor-pointer  md:p-5">
-      <ArrowLeftIcon className="dark:fill-white fill-black" />
-      <span>Index</span>
+        <ArrowLeftIcon className="dark:fill-white fill-black" />
+        <span>Index</span>
       </button>
     </Link>
   );

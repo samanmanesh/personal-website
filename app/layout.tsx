@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import "./styles/fonts.css";
 import Sidebar from "./common/Sidebar";
+import Footer from "./common/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -55,6 +56,7 @@ export default function RootLayout({
           <nav className="h-12 md:h-28 w-full bg-gradient-to-t from-transparent to-stone-50 dark:to-[#1e1e1e]  mix-blend-normal backdrop-grayscale fixed top-0 z-10"></nav>
           <Sidebar />
           {children}
+          <Footer />
         </main>
       </body>
     </html>
