@@ -13,7 +13,7 @@ const QAndAIData = {
 
 export default function QAndAI() {
   return (
-    <section className=" mb-16 h-full md:w-2/5 text-primary dark:text-white flex flex-col gap-16">
+    <section className=" mb-16 h-full md:w-2/5 text-primary dark:text-white flex flex-col gap-11">
       <div className="flex flex-col gap-1">
         <h1 className="font-inter font-medium text-lg ">{QAndAIData.title}</h1>
         <span className="text-secondary">{QAndAIData.date}</span>
@@ -28,7 +28,9 @@ export default function QAndAI() {
           />
         ))}
 
-        <span className="flex items-center gap-2">
+        
+      </section>
+      <span className="flex items-center gap-2">
           You can view the live demo at{" "}
           <a
             className="flex items-center gap-2 text-foreground border-b border-secondary"
@@ -38,7 +40,6 @@ export default function QAndAI() {
             <ArrowIcon className="dark:fill-white fill-secondary" />
           </a>
         </span>
-      </section>
       {/* video */}
       <div className="relative w-full  rounded-md border border-[#E8E8E8] dark:border-none aspect-video">
         <video className="w-full h-full object-cover" autoPlay loop muted>

@@ -1,6 +1,7 @@
 import React from "react";
 import Project from "./Project";
 import { cn } from "@/app/utils/cn";
+import { link } from "fs";
 
 type PersonalProjectsProps = {
   className?: string;
@@ -9,17 +10,19 @@ const projects = [
   {
     title: "Q&AI",
     describe: "Questions generator with power of Ai",
-    link: "",
+    link: "/q-and-ai",
   },
   {
     title: "Samitone",
     describe: "Simple browser-based audio sequencer app",
-    link: "",
+    // link: "https://samanmanesh.github.io/samitone/",
+    link: "/samitone",
   },
   {
     title: "Hilarion",
     describe: "Dynamic social media web application",
-    link: "",
+    // link: "https://hilarion-socialmedia-client.vercel.app/login",
+    link: "/hilarion",
   },
 ];
 

@@ -6,19 +6,19 @@ const experiences = [
   {
     title: "Montra",
     describe: "Full-stack engineer & UI/UX wizard ",
-    link: "",
+    link: "https://montra.com/",
     date: [2023, 2024],
   },
   {
     title: "BrokerPocket",
     describe: "Full-stack engineer & design visionary ",
-    link: "",
+    link: "https://brokerpocket.com/",
     date: [2022, 2023],
   },
   {
     title: "AuditX",
     describe: "Full-stack engineer & interface crafter ",
-    link: "",
+    link: "https://www.auditx.ca/",
     date: [2020, 2021],
   },
 ];
