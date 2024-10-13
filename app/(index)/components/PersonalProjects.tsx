@@ -23,6 +23,7 @@ const projects = [
     describe: "Dynamic social media web application",
     // link: "https://hilarion-socialmedia-client.vercel.app/login",
     link: "/hilarion",
+    
   },
 ];
 

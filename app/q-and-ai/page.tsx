@@ -1,4 +1,4 @@
-import ArrowIcon from "../assets/ArrowIcon";
+import ArrowRightIcon from "../assets/ArrowRightIcon";
 
 const QAndAIData = {
   title: "Q&Ai",
@@ -37,7 +37,7 @@ export default function QAndAI() {
             href={QAndAIData.link}
           >
             {QAndAIData.title}{" "}
-            <ArrowIcon className="dark:fill-white fill-secondary" />
+            <ArrowRightIcon className="dark:fill-white fill-secondary" />
           </a>
         </span>
       {/* video */}

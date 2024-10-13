@@ -1,6 +1,6 @@
 import React, { FunctionComponent, HTMLAttributes } from "react";
 
-const ArrowIcon: FunctionComponent<HTMLAttributes<HTMLOrSVGElement>> = (
+const ArrowLeftIcon: FunctionComponent<HTMLAttributes<HTMLOrSVGElement>> = (
   props
 ) => (
   <svg
@@ -25,4 +25,4 @@ const ArrowIcon: FunctionComponent<HTMLAttributes<HTMLOrSVGElement>> = (
   </defs>
 </svg>
 );
-export default ArrowIcon;
+export default ArrowLeftIcon;

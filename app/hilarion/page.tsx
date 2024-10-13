@@ -1,4 +1,4 @@
-import ArrowIcon from "../assets/ArrowIcon";
+import ArrowRightIcon from "../assets/ArrowRightIcon";
 
 const HilarionData = {
   title: "Hilarion",
@@ -39,7 +39,7 @@ export default function Hilarion() {
             href={HilarionData.link}
           >
             {HilarionData.title}{" "}
-            <ArrowIcon className="dark:fill-white fill-secondary" />
+            <ArrowRightIcon className="dark:fill-white fill-secondary" />
           </a>
         </span>
       {/* video */}

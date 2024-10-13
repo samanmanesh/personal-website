@@ -1,4 +1,4 @@
-import ArrowIcon from "../assets/ArrowIcon";
+import ArrowRightIcon from "../assets/ArrowRightIcon";
 
 const SamitoneData = {
   title: "Samitone",
@@ -37,7 +37,7 @@ export default function Samitone() {
             href={SamitoneData.link}
           >
             {SamitoneData.title}{" "}
-            <ArrowIcon className="dark:fill-white fill-secondary" />
+            <ArrowRightIcon className="dark:fill-white fill-secondary" />
           </a>
         </span>
       {/* video */}
