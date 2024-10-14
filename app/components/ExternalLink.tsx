@@ -7,11 +7,6 @@ import { cn } from "../utils/cn";
 import * as Tooltip from "@radix-ui/react-tooltip";
 import ArrowRightIcon from "../assets/ArrowRightIcon";
 
-//  {
-//   href: string;
-// } & React.HTMLAttributes<HTMLAnchorElement> & {
-//     imageHref?: string;
-//   }
 type ExternalLinkProps = {
   href: string;
   imageHref?: string;

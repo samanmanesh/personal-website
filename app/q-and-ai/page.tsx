@@ -27,19 +27,17 @@ export default function QAndAI() {
             dangerouslySetInnerHTML={{ __html: paragraph }}
           />
         ))}
-
-        
       </section>
       <span className="flex items-center gap-2">
-          You can view the live demo at{" "}
-          <a
-            className="flex items-center gap-2 text-foreground border-b border-secondary"
-            href={QAndAIData.link}
-          >
-            {QAndAIData.title}{" "}
-            <ArrowRightIcon className="dark:fill-white fill-secondary" />
-          </a>
-        </span>
+        You can view the live demo at{" "}
+        <a
+          className="flex items-center gap-2 text-foreground border-b border-secondary"
+          href={QAndAIData.link}
+        >
+          {QAndAIData.title}{" "}
+          <ArrowRightIcon className="dark:fill-white fill-secondary" />
+        </a>
+      </span>
       {/* video */}
       <div className="relative w-full  rounded-md border border-[#E8E8E8] dark:border-none aspect-video">
         <video className="w-full h-full object-cover" autoPlay loop muted>

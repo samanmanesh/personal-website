@@ -1,9 +1,6 @@
-import React from "react";
 import Project from "./Project";
 import { cn } from "@/app/utils/cn";
-import { link } from "fs";
 
-// the image is in public/preview folder
 type PersonalProjectsProps = {
   className?: string;
 };
@@ -28,7 +25,6 @@ const projects = [
     externalLink: "https://hilarion-socialmedia-client.vercel.app/login",
     link: "/hilarion",
     imageHref: "/preview/Hilarion.png",
-    
   },
 ];
 
