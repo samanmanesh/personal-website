@@ -27,10 +27,11 @@ export const ExternalLink = ({
 }: ExternalLinkProps) => {
   const [copied, setCopied] = useState(false);
   const router = useRouter();
-  const showTooltipPanel =
-    !!imageHref ||
-    props.href.includes("mailto") ||
-    props.href === "/experiments";
+  // const showTooltipPanel =
+  //   !!imageHref ||
+  //   props.href.includes("mailto") ||
+  //   props.href === "/experiments";
+
   const navigate = () => {
     if (typeof window !== "undefined") {
       if (props.href.startsWith("http")) {
@@ -79,7 +80,7 @@ export const ExternalLink = ({
                 </div>
               )}
 
-              <div className="group-hover:flex hidden items-center relative   text-white gap-6">
+              <div className="group-hover:flex hidden items-center relative text-white gap-6">
                 {props.href && (
                   <button
                     className=" border-b border-white text-base flex gap-2 items-center "

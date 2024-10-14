@@ -13,6 +13,7 @@ const projects = [
     describe: "Questions generator with power of Ai",
     externalLink: "",
     link: "/q-and-ai",
+    imageHref: "/preview/QnAI.png",
   },
   {
     title: "Samitone",
@@ -26,6 +27,7 @@ const projects = [
     describe: "Dynamic social media web application",
     externalLink: "https://hilarion-socialmedia-client.vercel.app/login",
     link: "/hilarion",
+    imageHref: "/preview/Hilarion.png",
     
   },
 ];
