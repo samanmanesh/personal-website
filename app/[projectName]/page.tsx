@@ -16,15 +16,17 @@ const variants = {
     y: 0,
     filter: "blur(0px)",
     transition: {
-      duration: 0.2,
-      staggerChildren: 0.1, // Stagger the children animations
+      duration: 0.4,
+      staggerChildren: 0.2, // Stagger the children animations
     },
   },
 };
-export default function ProjectPage({ params }: { params: { projectName: string } }) {
+export default function ProjectPage({
+  params,
+}: {
+  params: { projectName: string };
+}) {
   const projectData = getProjectData(params.projectName);
-  
-  console.log(params.projectName);
 
   if (!projectData) {
     return <div>Project not found</div>;
@@ -38,9 +40,7 @@ export default function ProjectPage({ params }: { params: { projectName: string 
         initial="hidden"
         animate="visible"
       >
-        <h1 className="font-inter font-medium text-lg ">
-          {projectData.title}
-        </h1>
+        <h1 className="font-inter font-medium text-lg ">{projectData.title}</h1>
         <span className="text-secondary">{projectData.date}</span>
       </motion.div>
 
