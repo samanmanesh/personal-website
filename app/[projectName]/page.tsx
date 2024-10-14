@@ -21,10 +21,10 @@ const variants = {
     },
   },
 };
-export default function ProjectPage({ params }: { params: { slug: string } }) {
-  const projectData = getProjectData(params.slug);
+export default function ProjectPage({ params }: { params: { projectName: string } }) {
+  const projectData = getProjectData(params.projectName);
   
-  console.log(params.slug);
+  console.log(params.projectName);
 
   if (!projectData) {
     return <div>Project not found</div>;

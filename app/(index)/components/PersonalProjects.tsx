@@ -9,7 +9,7 @@ const projects = [
     title: "Q&AI",
     describe: "Questions generator with power of Ai",
     externalLink: "",
-    link: "/q-and-ai",
+    link: "/qandai",
     imageHref: "/preview/QnAI.png",
   },
   {

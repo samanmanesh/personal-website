@@ -7,7 +7,7 @@ const Intro = ({className}: {
 }) => {
   return (
     <section className={cn("flex flex-col gap-7", className)}>
-      <h1 className="font-inter font-medium text-base ">Saman Manesh</h1>
+      <h1 className="font-inter font-medium text-md ">Saman Manesh</h1>
       <p>
         <span className="font-newsreader italic text-lg">Software developer & designer. </span>Architecting fluid interfaces. Delivering elegant, high-performance
         software. Adding a touch of wonder to every interaction. I believe that
