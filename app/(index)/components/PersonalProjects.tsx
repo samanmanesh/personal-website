@@ -40,8 +40,8 @@ const PersonalProjects = (className: PersonalProjectsProps) => {
             key={index}
             title={data.title}
             describe={data.describe}
-            link={data.externalLink}
-            internalLink={data.link}
+            link={data.link}
+            linkType={"internal"}
             imageHref={data.imageHref}
           />
         ))}

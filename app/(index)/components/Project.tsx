@@ -1,7 +1,5 @@
 import ArrowRightIcon from "@/app/assets/ArrowRightIcon";
-import { ExternalLink } from "@/app/components/ExternalLink";
 import Link from "next/link";
-import React from "react";
 
 type ProjectProps = {
   title: string;
@@ -11,6 +9,7 @@ type ProjectProps = {
   icon?: boolean;
   internalLink?: string;
   imageHref?: string;
+  linkType?: "internal" | "external";
 };
 
 const Project = ({
@@ -20,10 +19,14 @@ const Project = ({
   icon,
   internalLink,
   imageHref,
+  linkType,
 }: ProjectProps) => {
   return (
-    <Link href={link} className={`w-40`}>
-      {/* // <ExternalLink href={link} className={`w-40`} internalLink={internalLink} imageHref={imageHref}> */}
+    <Link
+      href={link}
+      target={linkType === "external" ? "_blank" : "_self"}
+      className={`w-40`}
+    >
       <div className="flex flex-col gap-2 ">
         <div className="font-inter font-medium text-base  decoration-secondary flex items-center justify-between gap-2 border-b border-secondary mr-auto ">
           <span>{title}</span>
@@ -35,7 +38,6 @@ const Project = ({
         <p className="text-base text-secondary font-normal">{describe}</p>
       </div>
     </Link>
-    // </ExternalLink>
   );
 };
 

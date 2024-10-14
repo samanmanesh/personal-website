@@ -40,6 +40,7 @@ const ProfessionalProjects = ({ className }: ExperiencesProps) => {
             title={experience.title}
             describe={experience.describe}
             link={experience.link}
+            linkType={"external"}
             date={experience.date}
             icon={true}
           />

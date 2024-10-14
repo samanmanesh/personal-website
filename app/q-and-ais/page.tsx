@@ -1,5 +1,6 @@
 import ArrowRightIcon from "../assets/ArrowRightIcon";
 
+
 const QAndAIData = {
   title: "Q&Ai",
   date: "October 8, 2024",
@@ -9,6 +10,18 @@ const QAndAIData = {
     "This project reflects my passion for blending clean, efficient code with thoughtful design, enhancing user engagement through the use of cutting-edge technologies like AI and carefully crafted interactions.",
   ],
   link: "",
+};
+
+const childVariants = {
+  hidden: { opacity: 0, filter: "blur(10px)", y: 10 }, // Fade in and slide up
+  visible: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: {
+      duration: 0.4,
+    },
+  },
 };
 
 export default function QAndAI() {
