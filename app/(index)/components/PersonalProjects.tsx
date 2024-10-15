@@ -43,6 +43,7 @@ const PersonalProjects = (className: PersonalProjectsProps) => {
             link={data.link}
             linkType={"internal"}
             imageHref={data.imageHref}
+            target="_self"
           />
         ))}
       </section>

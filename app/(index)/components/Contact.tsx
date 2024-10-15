@@ -1,3 +1,4 @@
+import { ExternalLink } from "@/app/components/ExternalLink";
 import { cn } from "@/app/utils/cn";
 import Link from "next/link";
 import React from "react";
@@ -12,13 +13,14 @@ const Contact = ({ className }: ContactProps) => {
       <h2 className="font-inter font-medium text-base">Contact</h2>
       <p>
         Reach me at &nbsp;
-        <Link
-          href="https://x.com/saman_manesh"
+        <ExternalLink
+          link="https://x.com/saman_manesh"
           className="underline decoration-secondary underline-offset-4"
+          // target="_blank"
           target="_blank"
         >
           @saman_manesh
-        </Link>{" "}
+        </ExternalLink>{" "}
         or{" "}
         <a
           href="mailto:samansbm7@gmail.com"
