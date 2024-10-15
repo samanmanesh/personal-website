@@ -12,7 +12,7 @@ const FeaturedProject = ({ className }: SelectedProjectProps) => {
         Featured
       </h3>
       {/* video */}
-      <div className="relative w-full  rounded-md border border-[#E8E8E8] dark:border-none aspect-video">
+      <div className="relative w-full  rounded-md bg-[#E8E8E8]  aspect-video">
         <video className="w-full h-full object-cover" autoPlay loop muted>
           <source src="/videos/selected-project.mp4" type="video/mp4" />
         </video>

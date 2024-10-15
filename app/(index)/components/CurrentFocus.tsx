@@ -7,7 +7,7 @@ type CurrentFocusProps = {
 
 const CurrentFocus = ({ className }: CurrentFocusProps) => {
   return (
-    <div className={cn("flex flex-col gap-7 ", className)}>
+    <div className={cn("flex flex-col gap-10 ", className)}>
       <h2 className="font-inter font-medium text-base">Current Focus</h2>
       <p>
       Deepening my understanding of AI and learning how to seamlessly integrate it into functional, user-centric applications.

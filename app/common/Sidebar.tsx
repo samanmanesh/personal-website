@@ -15,6 +15,14 @@ const Sidebar = (props: Props) => {
       className={`font-sohne text-black dark:text-white font-medium  ${
         path === "/" ? "hidden" : "block"
       } absolute md:fixed top-10 md:top-20 left-4 md:left-[14%] group `}
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{
+        duration: 0.5,
+        type: "spring",
+        stiffness: 260,
+        damping: 20,
+      }}
     >
       <Link className="flex gap-2" href={"/"}>
         <button className="flex gap-2 items-center group-hover:scale-95 transition ease-in-out hover:opacity-98 cursor-pointer  md:p-5 group-hover:drop-shadow-sm">

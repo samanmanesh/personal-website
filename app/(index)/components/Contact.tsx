@@ -7,7 +7,7 @@ type ContactProps = {
 
 const Contact = ({ className }: ContactProps) => {
   return (
-    <div className={cn("flex flex-col gap-7", className)}>
+    <div className={cn("flex flex-col gap-10", className)}>
       <h2 className="font-inter font-medium text-base">Contact</h2>
       <div className="flex gap-1 ">
         Reach me at

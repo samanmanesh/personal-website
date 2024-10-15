@@ -10,7 +10,7 @@ type ProjectProps = {
 
 const Projects = ({ className }: ProjectProps) => {
   return (
-    <div className={cn("flex flex-col gap-7", className)}>
+    <div className={cn("flex flex-col gap-10", className)}>
       <h2 className="font-inter font-medium text-base">Projects</h2>
       <FeaturedProject />
       <section className="flex justify-between gap-4 ">
