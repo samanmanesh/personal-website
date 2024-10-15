@@ -1,6 +1,4 @@
-import ArrowRightIcon from "@/app/assets/ArrowRightIcon";
 import { ExternalLink } from "@/app/components/ExternalLink";
-import Link from "next/link";
 
 type ProjectProps = {
   title: string;

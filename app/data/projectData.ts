@@ -22,7 +22,6 @@ const QAndAIData = {
   link: "",
 };
 
-
 const SamitoneData = {
   title: "Samitone",
   date: "May 2, 2021",
@@ -37,5 +36,5 @@ const SamitoneData = {
 export const projectData = {
   hilarion: HilarionData,
   qandai: QAndAIData,
-  samitone: SamitoneData
+  samitone: SamitoneData,
 };

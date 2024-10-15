@@ -1,7 +1,5 @@
 import { ExternalLink } from "@/app/components/ExternalLink";
 import { cn } from "@/app/utils/cn";
-import Link from "next/link";
-import React from "react";
 
 type ContactProps = {
   className?: string;
@@ -16,17 +14,12 @@ const Contact = ({ className }: ContactProps) => {
         <ExternalLink
           link="https://x.com/saman_manesh"
           className="text-base text-primary font-normal "
-          // target="_blank"
           target="_blank"
         >
           @saman_manesh
         </ExternalLink>
         <span> or </span>
-        <ExternalLink
-          // href="mailto:samansbm7@gmail.com"
-          link="mailto:samansbm7@gmail.com "
-          // className="underline decoration-secondary underline-offset-4"
-        >
+        <ExternalLink link="mailto:samansbm7@gmail.com ">
           samansbm7@gmail.com
         </ExternalLink>
       </div>

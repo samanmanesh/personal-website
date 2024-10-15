@@ -3,8 +3,6 @@ import Contact from "./components/Contact";
 import CurrentFocus from "./components/CurrentFocus";
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
-import { filter } from "framer-motion/m";
-import { easeInOut } from "framer-motion";
 
 export default function Home() {
   //render each section of the home page with animation from blured to clear and with a delay of 0.5s
@@ -73,18 +71,6 @@ export default function Home() {
           {container.component}
         </motion.div>
       ))}
-      {/* <motion.div variants={childVariants}>
-        <Intro />
-      </motion.div>
-      <motion.div variants={childVariants}>
-        <Projects />
-      </motion.div>
-      <motion.div variants={childVariants}>
-        <CurrentFocus />
-      </motion.div>
-      <motion.div variants={childVariants}>
-        <Contact className="mb-32" />
-      </motion.div> */}
     </motion.section>
   );
 }
