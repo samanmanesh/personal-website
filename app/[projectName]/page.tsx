@@ -2,6 +2,7 @@ import React from "react";
 import { getProjectData } from "../utils/getProjectData";
 import * as motion from "framer-motion/client";
 import ArrowRightIcon from "../assets/ArrowRightIcon";
+import { ExternalLink } from "../components/ExternalLink";
 
 type Props = {
   params: {
@@ -65,13 +66,14 @@ export default function ProjectPage({
         animate="visible"
       >
         You can view the live demo at{" "}
-        <a
-          className="flex items-center gap-2 text-foreground border-b border-secondary"
-          href={projectData.link}
+        <ExternalLink
+          link={projectData.link}
+          target="_blank"
+          icon
         >
           {projectData.title}{" "}
-          <ArrowRightIcon className="dark:fill-white fill-secondary" />
-        </a>
+          {/* <ArrowRightIcon className="dark:fill-white fill-secondary" /> */}
+        </ExternalLink>
       </motion.span>
       {/* video */}
       <motion.div

@@ -14,7 +14,7 @@ type ExternalLinkProps = {
   icon?: boolean;
   internalLink?: string;
   linkType?: "internal" | "external";
-  target?: string;
+  target?: "_blank" | "_self";
 };
 
 export const ExternalLink = ({
@@ -24,19 +24,13 @@ export const ExternalLink = ({
   linkType,
   internalLink,
   icon,
-  target,
+  target = "_blank",
   ...props
 }: ExternalLinkProps) => {
   return (
-    <Link
-      href={link}
-      // target={linkType === "external" ? "_blank" : "_self"}
-      target={target}
-      className={cn(`w-full group`, className)}
-
-    >
-      <div className="flex flex-col gap-2  ">
-        <div className="font-inter font-medium text-base  decoration-secondary flex items-center justify-between gap-2 border-b border-secondary mr-auto group-hover:border-primary dark:group-hover:border-white group-hover:drop-shadow-sm ">
+    <Link href={link} target={target} className={cn(`group`, className)}>
+      <div className="flex flex-col gap-2">
+        <div className="font-inter font-medium text-base  decoration-secondary flex items-center justify-between gap-2 border-b border-neutral-400 mr-auto group-hover:border-primary dark:group-hover:border-white group-hover:drop-shadow-sm ">
           <span className="">{children}</span>
 
           {icon && (
