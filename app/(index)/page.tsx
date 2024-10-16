@@ -49,7 +49,7 @@ export default function Home() {
     },
     {
       title: "Contact",
-      component: <Contact className="mb-32" />,
+      component: <Contact className="" />,
     },
   ];
 

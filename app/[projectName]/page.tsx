@@ -32,7 +32,8 @@ export default function ProjectPage({
   }
 
   return (
-    <section className=" mb-16 h-full md:w-[39%] text-primary dark:text-white/85 flex flex-col gap-11">
+    <section className=" mb-16 h-full md:w-[39%] text-primary dark:text-white/85 flex flex-col gap-11 ">
+      
       <motion.div
         className="flex flex-col gap-1"
         variants={variants}
@@ -70,7 +71,7 @@ export default function ProjectPage({
       </motion.span>
       {/* video */}
       <motion.div
-        className="relative w-full  rounded-md border bg-[#E8E8E8]  aspect-video"
+        className="relative w-full  rounded-md border bg-[#E8E8E8]  aspect-video "
         variants={variants}
         initial="hidden"
         animate="visible"

@@ -5,7 +5,7 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <div className="w-full md:w-2/5 h-10 flex justify-between  gap-1 ">
+    <div className="w-full md:w-2/5 h-10 flex justify-between  gap-1 mt-32 ">
       <p className=" font-sohne text-primary text-sm">Saman Manesh ⚙️ 2024 </p>
       <div className="text-xs text-secondary opacity-90 flex">
         Inspired by &nbsp;

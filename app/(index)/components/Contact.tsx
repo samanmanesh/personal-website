@@ -19,7 +19,9 @@ const Contact = ({ className }: ContactProps) => {
           @saman_manesh
         </ExternalLink>
         <span> or </span>
-        <ExternalLink link="mailto:samansbm7@gmail.com ">
+        <ExternalLink link="mailto:samansbm7@gmail.com "
+        className="text-base text-primary font-normal "
+        >
           samansbm7@gmail.com
         </ExternalLink>
       </div>
