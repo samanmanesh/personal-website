@@ -30,14 +30,16 @@ b {
 }
 a {
   font-weight: 600;
-  /* text-decoration-line: underline;
+  font-family: Inter;
+  text-decoration-line: underline;
   text-decoration-thickness: 0.05em;
   text-underline-offset: 1px;
   color: var(--primary);
   &:hover {
     opacity: 0.8;
     transition: all 0.2s;
-  } */
+  }
+  cursor: pointer;
 }
 
 @layer utilities {
