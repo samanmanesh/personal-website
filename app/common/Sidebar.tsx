@@ -24,7 +24,7 @@ const Sidebar = (props: Props) => {
         damping: 20,
       }}
     >
-      <Link className="flex gap-2" href={"/"}>
+      <Link className="flex gap-2 no-underline" href={"/"}>
         <button className="flex gap-2 items-center group-hover:scale-95 transition ease-in-out hover:opacity-98 cursor-pointer  md:p-5 group-hover:drop-shadow-sm">
           <ArrowLeftIcon className="dark:fill-white fill-black group-hover:-rotate-45 transition-all ease-linear duration-100" />
           <span>Home</span>
