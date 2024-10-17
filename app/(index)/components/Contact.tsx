@@ -5,9 +5,10 @@ type ContactProps = {
   className?: string;
 };
 
+//here needs to be fixed to not have overflow on the phone
 const Contact = ({ className }: ContactProps) => {
   return (
-    <div className={cn("flex flex-col gap-10", className)}>
+    <div className={cn("flex flex-col gap-10 ", className)}>
       <h2 className="font-inter font-medium text-base">Contact</h2>
       <div className="flex gap-1 ">
         Reach me at
