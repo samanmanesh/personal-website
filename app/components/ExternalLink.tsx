@@ -21,7 +21,6 @@ export const ExternalLink = ({
   link,
   icon,
   target = "_blank",
-  ...props
 }: ExternalLinkProps) => {
   return (
     <Link
