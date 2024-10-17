@@ -2,12 +2,6 @@ import { getProjectData } from "../utils/getProjectData";
 import * as motion from "framer-motion/client";
 import { ExternalLink } from "../components/ExternalLink";
 
-type Props = {
-  params: {
-    slug: string;
-  };
-};
-
 const variants = {
   hidden: { opacity: 0, filter: "blur(10px)", y: 6 }, // Fade in and slide up
   visible: {

@@ -17,9 +17,6 @@ const Project = ({
   describe,
   link,
   icon,
-  internalLink,
-  imageHref,
-  linkType,
   target,
 }: ProjectProps) => {
   return (

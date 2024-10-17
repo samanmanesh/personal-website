@@ -1,9 +1,7 @@
 import React from "react";
 import { ExternalLink } from "../components/ExternalLink";
 
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <div className="w-full md:w-2/5 h-10 flex justify-between  gap-1 mt-32 ">
       <p className=" font-sohne text-primary text-sm">Saman Manesh ⚙️ 2024 </p>

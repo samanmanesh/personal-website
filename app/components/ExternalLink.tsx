@@ -1,10 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import React, { useState } from "react";
+import React from "react";
 import { cn } from "../utils/cn";
-import * as Tooltip from "@radix-ui/react-tooltip";
 import ArrowRightIcon from "../assets/ArrowRightIcon";
 
 type ExternalLinkProps = {
@@ -21,14 +19,16 @@ export const ExternalLink = ({
   children,
   className,
   link,
-  linkType,
-  internalLink,
   icon,
   target = "_blank",
   ...props
 }: ExternalLinkProps) => {
   return (
-    <Link href={link} target={target} className={cn(`group no-underline`, className)}>
+    <Link
+      href={link}
+      target={target}
+      className={cn(`group no-underline`, className)}
+    >
       <div className="flex flex-col gap-2">
         <div className="font-inter font-medium text-base decoration-secondary flex items-center justify-between gap-2 border-b border-neutral-400 mr-auto group-hover:border-primary dark:group-hover:border-white group-hover:drop-shadow-sm ">
           <span className="flex">{children}</span>

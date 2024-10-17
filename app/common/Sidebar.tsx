@@ -4,9 +4,7 @@ import ArrowLeftIcon from "../assets/ArrowLeftIcon";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-type Props = {};
-
-const Sidebar = (props: Props) => {
+const Sidebar = () => {
   const path = usePathname();
   console.log(path);
 
