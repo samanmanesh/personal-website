@@ -9,6 +9,7 @@ const HilarionData = {
     "Through this project, I deepened my understanding of user authentication, data routing, and media handling, making <b>Hilarion</b> a highly educational experience in full-stack development.",
   ],
   link: "https://hilarion-socialmedia-client.vercel.app/login",
+  videoSrc: "video/Hilarion-video-demo-v1.mp4",
 };
 
 const QAndAIData = {
@@ -19,7 +20,8 @@ const QAndAIData = {
     "I’ve always believed that animations add a layer of interaction that brings a website to life—when done thoughtfully and without overwhelming the user. For QandAi, I combined <b>CSS</b> animations and <a href='https://www.framer.com/motion/' target='_blank'>Framer Motion</a> to introduce smooth, subtle animations that guide users through the experience, keeping the interface dynamic yet refined. The result is an app that feels polished and responsive, with the right balance of functionality and visual delight.",
     "This project reflects my passion for blending clean, efficient code with thoughtful design, enhancing user engagement through the use of cutting-edge technologies like AI and carefully crafted interactions.",
   ],
-  link: "",
+  link: "https://q-and-ai.vercel.app/qa",
+  videoSrc: "video/Q&Ali-video-demo-v2.mp4",
 };
 
 const SamitoneData = {
@@ -31,6 +33,7 @@ const SamitoneData = {
     "This project reflects my passion for blending clean, efficient code with thoughtful design, enhancing user engagement through the use of cutting-edge technologies like AI and carefully crafted interactions.",
   ],
   link: "https://samanmanesh.github.io/samitone/",
+  videoSrc:""
 };
 
 export const projectData = {

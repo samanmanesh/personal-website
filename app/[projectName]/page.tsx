@@ -31,6 +31,8 @@ export default function ProjectPage({
     return <div>Project not found</div>;
   }
 
+  const videoSrc = projectData.videoSrc
+
   return (
     <section className=" mb-16 h-full md:w-[39%] text-primary dark:text-white/85 flex flex-col gap-11 ">
       
@@ -71,13 +73,13 @@ export default function ProjectPage({
       </motion.span>
       {/* video */}
       <motion.div
-        className="relative w-full  rounded-md border bg-[#E8E8E8]  aspect-video "
+        className="relative w-full  rounded-md border bg-[#E8E8E8]  overflow-hidden  "
         variants={variants}
         initial="hidden"
         animate="visible"
       >
-        <video className="w-full h-full object-cover" autoPlay loop muted>
-          <source src="/videos/selected-project.mp4" type="video/mp4" />
+        <video className="w-full h-full object-cover " autoPlay loop muted>
+          <source src={videoSrc} type="video/mp4" />
         </video>
       </motion.div>
     </section>
