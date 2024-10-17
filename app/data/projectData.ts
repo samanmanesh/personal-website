@@ -33,7 +33,7 @@ const SamitoneData = {
     "This project reflects my passion for blending clean, efficient code with thoughtful design, enhancing user engagement through the use of cutting-edge technologies like AI and carefully crafted interactions.",
   ],
   link: "https://samanmanesh.github.io/samitone/",
-  videoSrc:""
+  videoSrc:"video/Samitone-demo-video-v2.mp4"
 };
 
 export const projectData = {
