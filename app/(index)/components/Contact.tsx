@@ -13,23 +13,15 @@ const Contact = ({ className }: ContactProps) => {
       <div className="flex flex-col md:flex-row  gap-1 ">
         <p className="flex-shrink-0">Reach me at</p>
         <div className="flex gap-1">
-          <ExternalLink
-            link="https://x.com/saman_manesh"
-            className="text-base text-primary font-normal "
-            target="_blank"
-          >
-            <span className="text-base text-primary font-normal ">
-            @saman_manesh
+          <ExternalLink link="https://x.com/saman_manesh" target="_blank">
+            <span className="text-base text-primary font-medium">
+              @saman_manesh
             </span>
           </ExternalLink>
           <span> or </span>
-          <ExternalLink
-            link="mailto:samansbm7@gmail.com "
-            
-          >
-            <span className="text-base text-primary font-normal ">
-
-            samansbm7@gmail.com
+          <ExternalLink link="mailto:samansbm7@gmail.com ">
+            <span className="text-base text-primary font-medium ">
+              samansbm7@gmail.com
             </span>
           </ExternalLink>
         </div>

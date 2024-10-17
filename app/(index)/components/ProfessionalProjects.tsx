@@ -33,7 +33,7 @@ const ProfessionalProjects = ({ className }: ExperiencesProps) => {
       <h3 className="font-sohne text-sm text-secondary font-normal">
         Professional
       </h3>
-      <section className="flex flex-col gap-10">
+      <section className="flex flex-col gap-7">
         {experiences.map((experience, index) => (
           <Project
             key={index}
