@@ -1,4 +1,5 @@
 import { cn } from "@/app/utils/cn";
+import Link from "next/link";
 import React from "react";
 
 type SelectedProjectProps = {
@@ -12,10 +13,12 @@ const FeaturedProject = ({ className }: SelectedProjectProps) => {
         Featured
       </h3>
       {/* video */}
-      <div className="relative w-full rounded-md bg-[#E8E8E8] overflow-hidden">
-        <video className="w-full h-full object-cover" autoPlay loop muted>
-          <source src="video/Q&Ali-video-demo-v2.mp4" type="video/mp4" />
-        </video>
+      <div className="relative w-full rounded-md bg-[#E8E8E8] overflow-hidden hover:bg-black/60 hover:backdrop-blur-2xl ">
+        <Link href="/qandai">
+          <video className="w-full h-full object-cover" autoPlay loop muted>
+            <source src="video/Q&Ai-video-demo-v3.mp4" type="video/mp4" />
+          </video>
+        </Link>
       </div>
     </section>
   );
