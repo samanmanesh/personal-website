@@ -28,11 +28,8 @@ const newsreader = Newsreader({
 });
 
 export const metadata = {
-  title: "Personal Website", // Change to your app's title
-  description: "A brief description of your app",
-  icons: {
-    icon: "/personal-log.ico", // Path to your favicon
-  },
+  title: "Saman Manesh", // Change to your app's title
+  description: "Personal website and blog",
 };
 
 //added metadata to the layout
