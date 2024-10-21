@@ -21,7 +21,7 @@ const QAndAIData = {
     "This project reflects my passion for blending clean, efficient code with thoughtful design, enhancing user engagement through the use of cutting-edge technologies like AI and carefully crafted interactions.",
   ],
   link: "https://q-and-ai.vercel.app/qa",
-  videoSrc: "video/Q&Ai-video-demo-v2.mp4",
+  videoSrc: "video/Q&Ai-video-demo-v3.mp4",
 };
 
 const SamitoneData = {
