@@ -4,6 +4,7 @@ import "./globals.css";
 import "./styles/fonts.css";
 import Sidebar from "./common/Sidebar";
 import Footer from "./common/Footer";
+import { CSPostHogProvider } from "@/providers/postHog-providers";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -44,8 +45,8 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/personal-log.ico" />
       </head>
+      <CSPostHogProvider>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${newsreader.variable} ${sohne.variable} antialiased font-sohne`}
       >
@@ -56,6 +57,7 @@ export default function RootLayout({
           <Footer />
         </main>
       </body>
+      </CSPostHogProvider>
     </html>
   );
 }
