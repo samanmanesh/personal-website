@@ -1,7 +1,6 @@
 import { getProjectData } from "../utils/getProjectData";
 import * as motion from "framer-motion/client";
 import { ExternalLink } from "../components/ExternalLink";
-import Link from "next/link";
 
 const variants = {
   hidden: { opacity: 0, filter: "blur(10px)", y: 6 }, // Fade in and slide up
@@ -67,16 +66,14 @@ export default function ProjectPage({
       </motion.span>
       {/* video */}
       <motion.div
-        className="relative w-full rounded-md bg-[#E8E8E8] overflow-hidden hover:bg-black/60 hover:backdrop-blur-2xl "
+        className="relative w-full rounded-md bg-[#E8E8E8] overflow-hidden  "
         variants={variants}
         initial="hidden"
         animate="visible"
       >
-        <Link href={projectData.link}>
-          <video className="w-full h-full object-cover " autoPlay loop muted>
-            <source src={videoSrc} type="video/mp4" />
-          </video>
-        </Link>
+        <video className="w-full h-full object-cover " autoPlay loop muted>
+          <source src={videoSrc} type="video/mp4" />
+        </video>
       </motion.div>
     </section>
   );
