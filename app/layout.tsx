@@ -29,7 +29,7 @@ const newsreader = Newsreader({
 });
 
 export const metadata = {
-  title: "Saman Manesh", // Change to your app's title
+  title: "Sam Sobhan", // Change to your app's title
   description: "Personal website and blog",
 };
 

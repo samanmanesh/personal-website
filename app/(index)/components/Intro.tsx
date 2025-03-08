@@ -4,7 +4,7 @@ import React from "react";
 const Intro = ({ className }: { className?: string }) => {
   return (
     <section className={cn("flex flex-col gap-10", className)}>
-      <h1 className="font-inter font-medium">Saman Manesh</h1>
+      <h1 className="font-inter font-medium">Sam Sobhan</h1>
       <p>
         <span className="font-newsreader italic text-lg">
           Software developer & designer.{" "}
