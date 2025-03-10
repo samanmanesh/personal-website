@@ -13,9 +13,9 @@ const Contact = ({ className }: ContactProps) => {
       <div className="flex flex-col md:flex-row  gap-1 ">
         <p className="flex-shrink-0">Reach me at</p>
         <div className="flex gap-1">
-          <ExternalLink link="https://x.com/sam_sobhan" target="_blank">
+          <ExternalLink link="https://x.com/saman_manesh" target="_blank">
             <span className="text-base text-primary font-medium">
-              @sam_sobhan
+              @saman_manesh
             </span>
           </ExternalLink>
           <span> or </span>
