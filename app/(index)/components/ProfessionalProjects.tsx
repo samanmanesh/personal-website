@@ -4,6 +4,12 @@ import Project from "./Project";
 
 const experiences = [
   {
+    title: "Goose Party",
+    describe: "Founding engineer",
+    link: "https://www.gooseparty.gg/",
+    date: [2024, 2025],
+  },
+  {
     title: "Montra",
     describe: "Full-stack engineer & UI/UX wizard ",
     link: "https://montra.com/",
