@@ -66,7 +66,7 @@ export default function ProjectPage({
       </motion.span>
       {/* video */}
       <motion.div
-        className="relative w-full rounded-md bg-[#E8E8E8] overflow-hidden  "
+        className="relative w-full rounded-lg border border-[#E8E8E8] bg-[#E8E8E8] overflow-hidden  "
         variants={variants}
         initial="hidden"
         animate="visible"

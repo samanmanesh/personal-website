@@ -13,10 +13,10 @@ const FeaturedProject = ({ className }: SelectedProjectProps) => {
         Featured
       </h3>
       {/* video */}
-      <div className="relative w-full rounded-md bg-[#E8E8E8] overflow-hidden hover:bg-black/5 hover:backdrop-blur-2xl transition ease-in-out">
+      <div className="relative w-full rounded-lg border border-[#E8E8E8] bg-[#E8E8E8]  overflow-hidden hover:bg-black/5 hover:backdrop-blur-2xl transition ease-in-out">
         <Link href="/qandai">
           <video
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover rounded-lg"
             autoPlay
             loop
             muted
