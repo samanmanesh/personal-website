@@ -64,47 +64,51 @@ const variants = {
 
 export default function WorkPage() {
   return (
-    <motion.section
-      className="page-column mb-16 h-full project-section text-primary dark:text-white/85"
+    <motion.div
+      className="page-column mb-16 h-full flex flex-col text-primary dark:text-white/85"
       variants={variants}
       initial="hidden"
       animate="visible"
     >
-      <motion.header className="project-heading-group" variants={variants}>
-        <h1 className="project-heading">Selected engineering work</h1>
-      </motion.header>
-      <motion.p variants={variants}>
-          I build across product and engineering, from early scope and interface
-          design to APIs, data models and reliable workflows. Here is what I
-          owned and built in four projects.
-      </motion.p>
-      <div className="flex flex-col gap-24 md:gap-32">
-        {projects.map((project) => (
-          <motion.article
-            key={project.id}
-            id={project.id}
-            className="project-section scroll-mt-36"
-            variants={variants}
-          >
-            <div className="project-heading-group">
-              <h2 className="project-heading">{project.name}</h2>
-              <p className="text-secondary">{project.role}</p>
-            </div>
-            <ProjectCopy paragraphs={project.paragraphs} />
-            {project.link && (
-              <div className="flex flex-wrap items-center gap-2">
-                You can visit the project at{" "}
-                <ExternalLink link={project.link} target="_blank" icon>
-                  {project.name}
-                </ExternalLink>
+      <section className="project-section">
+        <motion.header className="project-heading-group" variants={variants}>
+          <h1 className="project-heading">Selected engineering work</h1>
+        </motion.header>
+        <motion.p variants={variants}>
+            I build across product and engineering, from early scope and interface
+            design to APIs, data models and reliable workflows. Here is what I
+            owned and built in four projects.
+        </motion.p>
+        <div className="flex flex-col gap-24 md:gap-32">
+          {projects.map((project) => (
+            <motion.article
+              key={project.id}
+              id={project.id}
+              className="project-section scroll-mt-36"
+              variants={variants}
+            >
+              <div className="project-heading-group">
+                <h2 className="project-heading">{project.name}</h2>
+                <p className="text-secondary">{project.role}</p>
               </div>
-            )}
-          </motion.article>
-        ))}
-      </div>
-      <motion.p variants={variants}>
-        Interested in building together? <a href="mailto:samansbm7@gmail.com">Get in touch.</a>
-      </motion.p>
-    </motion.section>
+              <ProjectCopy paragraphs={project.paragraphs} />
+              {project.link && (
+                <div className="flex flex-wrap items-center gap-2">
+                  You can visit the project at{" "}
+                  <ExternalLink link={project.link} target="_blank" icon>
+                    {project.name}
+                  </ExternalLink>
+                </div>
+              )}
+            </motion.article>
+          ))}
+        </div>
+      </section>
+      <motion.footer className="mt-24 md:mt-32" variants={variants}>
+        <p>
+          Interested in building together? <a href="mailto:samansbm7@gmail.com">Get in touch.</a>
+        </p>
+      </motion.footer>
+    </motion.div>
   );
 }

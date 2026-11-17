@@ -35,9 +35,9 @@ export default function HomeBackground() {
   return (
     <div className="home-fibers-background" aria-hidden="true">
       <GhostFibers
-        glowColor="#ffffff"
-        lineColor="#ffffff"
-        secondaryColor="#d5d5d9"
+        glowColor="#e3e1e6"
+        lineColor="#c8c4cf"
+        secondaryColor="#b5b4bb"
         layers={3}
         twist={1.2}
         threads={preferences.compact ? 36 : 72}
@@ -50,7 +50,7 @@ export default function HomeBackground() {
         pulseOnClick={false}
         waves={1.1}
         spread={0.9}
-        speed={0.25}
+        speed={0.2}
         particles={0.2}
         grain={0.015}
         dpr={1}

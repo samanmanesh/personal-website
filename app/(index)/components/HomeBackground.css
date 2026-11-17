@@ -3,13 +3,13 @@
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  opacity: 0.85;
+  opacity: 0.95;
   mask-image: linear-gradient(
     to right,
     #000 0%,
     #000 20%,
-    rgb(0 0 0 / 0.15) 35%,
-    rgb(0 0 0 / 0.15) 65%,
+    rgb(0 0 0 / 0.22) 35%,
+    rgb(0 0 0 / 0.22) 65%,
     #000 80%,
     #000 100%
   );
@@ -23,7 +23,7 @@
 
 @media (max-width: 767px) {
   .home-fibers-background {
-    opacity: 0.35;
+    opacity: 0.5;
     mask-image: none;
   }
 }
