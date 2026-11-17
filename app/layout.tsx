@@ -29,8 +29,9 @@ const newsreader = Newsreader({
 });
 
 export const metadata = {
-  title: "Sam Sobhan", // Change to your app's title
-  description: "Personal website and blog",
+  title: "Sam Sobhan | Founding Engineer & AI Products",
+  description:
+    "Toronto-based software engineer building AI products, backend services and interactive applications with React, TypeScript, Python and PostgreSQL.",
 };
 
 //added metadata to the layout
