@@ -1,6 +1,7 @@
 import { getProjectData } from "../utils/getProjectData";
 import * as motion from "framer-motion/client";
 import { ExternalLink } from "../components/ExternalLink";
+import ProjectCopy from "../components/ProjectCopy";
 
 const variants = {
   hidden: { opacity: 0, filter: "blur(10px)", y: 6 }, // Fade in and slide up
@@ -45,13 +46,7 @@ export default function ProjectPage({
         initial="hidden"
         animate="visible"
       >
-        {projectData.paragraphs.map((paragraph, index) => (
-          <p
-            key={index}
-            className="text-base  font-normal"
-            dangerouslySetInnerHTML={{ __html: paragraph }}
-          />
-        ))}
+        <ProjectCopy paragraphs={projectData.paragraphs} />
       </motion.section>
       <motion.span
         className="flex flex-wrap items-center gap-2"
