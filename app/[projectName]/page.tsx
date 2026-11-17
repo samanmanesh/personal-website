@@ -28,7 +28,7 @@ export default function ProjectPage({
   const videoSrc = projectData.videoSrc;
 
   return (
-    <section className=" mb-16 h-full md:w-[39%] text-primary dark:text-white/85 flex flex-col gap-11 ">
+    <section className="page-column mb-16 h-full text-primary dark:text-white/85 flex flex-col gap-11 ">
       <motion.div
         className="flex flex-col gap-1"
         variants={variants}
@@ -54,7 +54,7 @@ export default function ProjectPage({
         ))}
       </motion.section>
       <motion.span
-        className="flex items-center gap-2"
+        className="flex flex-wrap items-center gap-2"
         variants={variants}
         initial="hidden"
         animate="visible"
@@ -71,7 +71,7 @@ export default function ProjectPage({
         initial="hidden"
         animate="visible"
       >
-        <video className="w-full h-full object-cover " autoPlay loop muted>
+        <video className="w-full h-full object-cover " autoPlay loop muted playsInline>
           <source src={videoSrc} type="video/mp4" />
         </video>
       </motion.div>

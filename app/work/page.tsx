@@ -1,4 +1,5 @@
-import Link from "next/link";
+import * as motion from "framer-motion/client";
+import { ExternalLink } from "../components/ExternalLink";
 
 export const metadata = {
   title: "Selected Engineering Work | Sam Sobhan",
@@ -71,46 +72,57 @@ const projects = [
   },
 ];
 
+const variants = {
+  hidden: { opacity: 0, filter: "blur(10px)", y: 6 },
+  visible: {
+    opacity: 1,
+    filter: "blur(0px)",
+    y: 0,
+    transition: { duration: 0.4, staggerChildren: 0.2 },
+  },
+};
+
 export default function WorkPage() {
   return (
-    <section className="w-full max-w-2xl flex flex-col gap-12 text-primary dark:text-white/85">
-      <Link href="/" className="text-sm text-secondary hover:underline">
-        &larr; Back to Sam Sobhan
-      </Link>
-      <header className="flex flex-col gap-5">
-        <h1 className="font-newsreader text-4xl">Selected engineering work</h1>
-        <p className="text-secondary">
+    <motion.section
+      className="page-column mb-16 h-full flex flex-col gap-16 text-primary dark:text-white/85"
+      variants={variants}
+      initial="hidden"
+      animate="visible"
+    >
+      <motion.header className="flex flex-col gap-10" variants={variants}>
+        <h1 className="font-inter font-medium text-lg">Selected engineering work</h1>
+        <p>
           I build across product and engineering, from early scope and interface
           design to APIs, data models and reliable workflows. Here is what I
           owned and built in four projects.
         </p>
-      </header>
+      </motion.header>
       {projects.map((project) => (
-        <article
+        <motion.article
           key={project.id}
           id={project.id}
-          className="flex flex-col gap-5 border-t border-black/10 dark:border-white/15 pt-8 scroll-mt-36"
+          className="flex flex-col gap-10 scroll-mt-36"
+          variants={variants}
         >
-          <div className="flex flex-col gap-2">
-            <h2 className="text-2xl font-newsreader">{project.name}</h2>
-            <p className="text-sm text-secondary">{project.role}</p>
+          <div className="flex flex-col gap-1">
+            <h2 className="font-inter font-medium text-lg">{project.name}</h2>
+            <p className="text-secondary">{project.role}</p>
           </div>
           <p>{project.summary}</p>
           <p>{project.ownership}</p>
-          <ul className="list-disc pl-5 space-y-3 text-secondary">
-            {project.work.map((item) => <li key={item}>{item}</li>)}
-          </ul>
+          {project.work.map((item) => <p key={item}>{item}</p>)}
           <p className="text-sm text-secondary">Tools: {project.stack}</p>
           {project.link && (
-            <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-sm underline underline-offset-4">
-              {project.linkText} &rarr;
-            </a>
+            <ExternalLink link={project.link} target="_blank" icon>
+              {project.linkText}
+            </ExternalLink>
           )}
-        </article>
+        </motion.article>
       ))}
-      <p className="border-t border-black/10 dark:border-white/15 pt-8">
-        Interested in building together? <a className="underline underline-offset-4" href="mailto:samansbm7@gmail.com">Get in touch.</a>
-      </p>
-    </section>
+      <motion.p variants={variants}>
+        Interested in building together? <a href="mailto:samansbm7@gmail.com">Get in touch.</a>
+      </motion.p>
+    </motion.section>
   );
 }

@@ -55,7 +55,7 @@ export default function Home() {
 
   return (
     <motion.section
-      className="h-full md:w-[39%] text-primary dark:text-white/85 flex flex-col gap-16"
+      className="page-column h-full text-primary dark:text-white/85 flex flex-col gap-16"
       variants={containerVariants}
       initial="hidden"
       animate="visible"

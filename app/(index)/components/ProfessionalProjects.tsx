@@ -1,6 +1,7 @@
 import { cn } from "@/app/utils/cn";
 import React from "react";
 import Project from "./Project";
+import Link from "next/link";
 
 const experiences = [
   {
@@ -53,7 +54,7 @@ type ExperiencesProps = {
 
 const ProfessionalProjects = ({ className }: ExperiencesProps) => {
   return (
-    <div className={cn("flex flex-col gap-6", className)}>
+    <div className={cn("flex min-w-0 w-40 flex-col gap-6", className)}>
       <h3 className="font-sohne text-sm text-secondary font-normal">
         Professional
       </h3>
@@ -70,6 +71,9 @@ const ProfessionalProjects = ({ className }: ExperiencesProps) => {
           />
         ))}
       </section>
+      <Link href="/work" className="text-sm">
+        Explore my engineering work &rarr;
+      </Link>
     </div>
   );
 };

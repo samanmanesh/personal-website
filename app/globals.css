@@ -42,6 +42,13 @@ a {
   cursor: pointer;
 }
 
+@layer components {
+  .page-column {
+    @apply w-full min-w-0 md:w-[39%];
+    overflow-wrap: break-word;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
