@@ -54,11 +54,11 @@ type ExperiencesProps = {
 
 const ProfessionalProjects = ({ className }: ExperiencesProps) => {
   return (
-    <div className={cn("flex min-w-0 w-40 flex-col gap-6", className)}>
+    <div className={cn("flex min-w-0 w-full flex-col gap-6", className)}>
       <h3 className="font-sohne text-sm text-secondary font-normal">
         Professional
       </h3>
-      <section className="flex flex-col gap-7">
+      <section className="flex flex-wrap justify-between gap-x-4 gap-y-7">
         {experiences.map((experience) => (
           <Project
             key={experience.title}
