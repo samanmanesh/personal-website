@@ -28,19 +28,19 @@ export default function ProjectPage({
   const videoSrc = projectData.videoSrc;
 
   return (
-    <section className="page-column mb-16 h-full text-primary dark:text-white/85 flex flex-col gap-11 ">
+    <section className="page-column mb-16 h-full text-primary dark:text-white/85 project-section">
       <motion.div
-        className="flex flex-col gap-1"
+        className="project-heading-group"
         variants={variants}
         initial="hidden"
         animate="visible"
       >
-        <h1 className="font-inter font-medium text-lg ">{projectData.title}</h1>
+        <h1 className="project-heading">{projectData.title}</h1>
         <span className="text-secondary">{projectData.date}</span>
       </motion.div>
 
       <motion.section
-        className="flex flex-col gap-10"
+        className="project-copy"
         variants={variants}
         initial="hidden"
         animate="visible"
