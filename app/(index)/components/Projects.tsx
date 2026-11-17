@@ -13,7 +13,7 @@ const Projects = ({ className }: ProjectProps) => {
     <div className={cn("flex flex-col gap-10", className)}>
       <h2 className="font-inter font-medium text-base">Projects</h2>
       <FeaturedProject />
-      <section className="grid grid-cols-2 gap-4 ">
+      <section className="flex justify-between gap-4 ">
         <PersonalProjects />
         <ProfessionalProjects />
       </section>
