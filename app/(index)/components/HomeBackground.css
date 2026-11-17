@@ -1,0 +1,29 @@
+.home-fibers-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.85;
+  mask-image: linear-gradient(
+    to right,
+    #000 0%,
+    #000 20%,
+    rgb(0 0 0 / 0.15) 35%,
+    rgb(0 0 0 / 0.15) 65%,
+    #000 80%,
+    #000 100%
+  );
+}
+
+@media (prefers-color-scheme: dark) {
+  .home-fibers-background {
+    opacity: 0.35;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-fibers-background {
+    opacity: 0.35;
+    mask-image: none;
+  }
+}
