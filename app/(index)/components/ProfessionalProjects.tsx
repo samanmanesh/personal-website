@@ -71,7 +71,7 @@ const ProfessionalProjects = ({ className }: ExperiencesProps) => {
           />
         ))}
       </section>
-      <Link href="/work" className="text-sm">
+      <Link href="/work" className="self-end text-right text-sm">
         Explore my engineering work &rarr;
       </Link>
     </div>

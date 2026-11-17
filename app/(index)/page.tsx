@@ -3,6 +3,7 @@ import Contact from "./components/Contact";
 import CurrentFocus from "./components/CurrentFocus";
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
+import HomeBackground from "./components/HomeBackground";
 
 export default function Home() {
   //render each section of the home page with animation from blured to clear and with a delay of 0.5s
@@ -54,23 +55,26 @@ export default function Home() {
   ];
 
   return (
-    <motion.section
-      className="page-column h-full text-primary dark:text-white/85 flex flex-col gap-16"
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-    >
-      {containers.map((container, index) => (
-        <motion.div
-          key={index}
-          variants={childVariants}
-          transition={{
-            delay: index * 20,
-          }}
-        >
-          {container.component}
-        </motion.div>
-      ))}
-    </motion.section>
+    <>
+      <HomeBackground />
+      <motion.section
+        className="page-column h-full text-primary dark:text-white/85 flex flex-col gap-16"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        {containers.map((container, index) => (
+          <motion.div
+            key={index}
+            variants={childVariants}
+            transition={{
+              delay: index * 20,
+            }}
+          >
+            {container.component}
+          </motion.div>
+        ))}
+      </motion.section>
+    </>
   );
 }
