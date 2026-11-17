@@ -20,7 +20,7 @@ const Project = ({
   target,
 }: ProjectProps) => {
   return (
-    <div className="flex flex-col gap-2 w-40 ">
+    <div className="flex min-w-0 w-full max-w-40 flex-col gap-2 ">
       <ExternalLink link={link} target={target} icon={icon}>
         <span>{title}</span>
       </ExternalLink>

@@ -1,6 +1,7 @@
 import { cn } from "@/app/utils/cn";
 import React from "react";
 import Project from "./Project";
+import Link from "next/link";
 
 const experiences = [
   {
@@ -70,6 +71,9 @@ const ProfessionalProjects = ({ className }: ExperiencesProps) => {
           />
         ))}
       </section>
+      <Link href="/work" className="text-sm">
+        Explore my engineering work &rarr;
+      </Link>
     </div>
   );
 };

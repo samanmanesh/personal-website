@@ -51,7 +51,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${newsreader.variable} ${sohne.variable} antialiased font-sohne`}
       >
-        <main className="p-4 pt-32 grid items-center justify-items-center min-h-screen overflow-auto ">
+        <main className="p-4 pt-32 grid grid-cols-[minmax(0,1fr)] items-center justify-items-center min-h-screen ">
           <nav className="h-12 md:h-28 w-full bg-gradient-to-t from-transparent to-stone-50 dark:to-[#1e1e1e]  mix-blend-normal backdrop-grayscale fixed top-0 z-10"></nav>
           <Sidebar />
           {children}
