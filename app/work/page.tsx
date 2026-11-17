@@ -78,28 +78,30 @@ export default function WorkPage() {
           design to APIs, data models and reliable workflows. Here is what I
           owned and built in four projects.
       </motion.p>
-      {projects.map((project) => (
-        <motion.article
-          key={project.id}
-          id={project.id}
-          className="project-section scroll-mt-36"
-          variants={variants}
-        >
-          <div className="project-heading-group">
-            <h2 className="project-heading">{project.name}</h2>
-            <p className="text-secondary">{project.role}</p>
-          </div>
-          <ProjectCopy paragraphs={project.paragraphs} />
-          {project.link && (
-            <div className="flex flex-wrap items-center gap-2">
-              You can visit the project at{" "}
-              <ExternalLink link={project.link} target="_blank" icon>
-                {project.name}
-              </ExternalLink>
+      <div className="flex flex-col gap-24 md:gap-32">
+        {projects.map((project) => (
+          <motion.article
+            key={project.id}
+            id={project.id}
+            className="project-section scroll-mt-36"
+            variants={variants}
+          >
+            <div className="project-heading-group">
+              <h2 className="project-heading">{project.name}</h2>
+              <p className="text-secondary">{project.role}</p>
             </div>
-          )}
-        </motion.article>
-      ))}
+            <ProjectCopy paragraphs={project.paragraphs} />
+            {project.link && (
+              <div className="flex flex-wrap items-center gap-2">
+                You can visit the project at{" "}
+                <ExternalLink link={project.link} target="_blank" icon>
+                  {project.name}
+                </ExternalLink>
+              </div>
+            )}
+          </motion.article>
+        ))}
+      </div>
       <motion.p variants={variants}>
         Interested in building together? <a href="mailto:samansbm7@gmail.com">Get in touch.</a>
       </motion.p>
