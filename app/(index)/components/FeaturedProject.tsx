@@ -12,20 +12,19 @@ const FeaturedProject = ({ className }: SelectedProjectProps) => {
       <h3 className="font-sohne text-sm text-secondary font-normal">
         Featured
       </h3>
-      {/* video */}
-      <div className="relative w-full rounded-lg border border-[#E8E8E8] bg-[#E8E8E8]  overflow-hidden hover:bg-black/5 hover:backdrop-blur-2xl transition ease-in-out">
-        <Link href="/qandai">
-          <video
-            className="w-full h-full object-cover rounded-lg"
-            autoPlay
-            loop
-            muted
-            playsInline
-          >
-            <source src="video/Q&Ai-video-demo-v3.mp4" type="video/mp4" />
-          </video>
-        </Link>
-      </div>
+      <Link
+        href="/work"
+        className="no-underline flex flex-col gap-5 rounded-lg border border-black/10 dark:border-white/15 p-6 hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+      >
+        <span className="font-newsreader italic text-2xl">
+          AI products, from interface to backend.
+        </span>
+        <p className="text-secondary">
+          Tally&apos;s financial AI workspace, Bogi&apos;s assistant integrations,
+          semantic search at Lightpage and real-time systems at Goose Party.
+        </p>
+        <span className="text-sm">Explore my engineering work &rarr;</span>
+      </Link>
     </section>
   );
 };

@@ -7,16 +7,17 @@ const Intro = ({ className }: { className?: string }) => {
       <h1 className="font-inter font-medium">Sam Sobhan</h1>
       <p>
         <span className="font-newsreader italic text-lg">
-          Software developer & designer.{" "}
+          Founding engineer building AI products.{" "}
         </span>
-        Architecting fluid interfaces. Delivering elegant, high-performance
-        software. Adding a touch of wonder to every interaction. I believe that
-        great design goes beyond aesthetics—it&apos;s about crafting experiences
-        that feel natural, intuitive, and seamless.
+        I&apos;m Sam, a Toronto-based software engineer with 5+ years of
+        experience in small startup teams. I work across product decisions,
+        interfaces, backend services and AI workflows, taking ideas from early
+        scope through implementation and iteration.
       </p>
       <p>
-        My focus is on blending clean code with thoughtful design, creating
-        digital experiences that are not only functional but also a joy to use.
+        My main tools are React, TypeScript, Next.js, Python and PostgreSQL.
+        I care about thoughtful design, sound technical tradeoffs and software
+        that is reliable and clear to use.
       </p>
     </section>
   );
