@@ -13,13 +13,13 @@ const experiences = [
   {
     title: "Bogi",
     describe: "Founding engineer",
-    link: "/work#bogi",
+    link: "https://usebogi.com/",
     date: [2025, 2026],
   },
   {
     title: "Lightpage",
     describe: "Product engineer (contract)",
-    link: "/work#lightpage",
+    link: "https://lightpage.com/",
     date: [2025],
   },
   {

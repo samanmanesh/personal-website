@@ -38,6 +38,8 @@ const projects = [
       "Built asynchronous processing with Cloudflare Queues, scheduled jobs and Gmail Pub/Sub webhooks.",
     ],
     stack: "Python, FastAPI, TypeScript, Cloudflare Queues and Gmail Pub/Sub",
+    link: "https://usebogi.com/",
+    linkText: "Visit Bogi",
   },
   {
     id: "lightpage",
@@ -85,38 +87,43 @@ const variants = {
 export default function WorkPage() {
   return (
     <motion.section
-      className="page-column mb-16 h-full flex flex-col gap-16 text-primary dark:text-white/85"
+      className="page-column mb-16 h-full project-section text-primary dark:text-white/85"
       variants={variants}
       initial="hidden"
       animate="visible"
     >
-      <motion.header className="flex flex-col gap-10" variants={variants}>
-        <h1 className="font-inter font-medium text-lg">Selected engineering work</h1>
-        <p>
+      <motion.header className="project-heading-group" variants={variants}>
+        <h1 className="project-heading">Selected engineering work</h1>
+      </motion.header>
+      <motion.p variants={variants}>
           I build across product and engineering, from early scope and interface
           design to APIs, data models and reliable workflows. Here is what I
           owned and built in four projects.
-        </p>
-      </motion.header>
+      </motion.p>
       {projects.map((project) => (
         <motion.article
           key={project.id}
           id={project.id}
-          className="flex flex-col gap-10 scroll-mt-36"
+          className="project-section scroll-mt-36"
           variants={variants}
         >
-          <div className="flex flex-col gap-1">
-            <h2 className="font-inter font-medium text-lg">{project.name}</h2>
+          <div className="project-heading-group">
+            <h2 className="project-heading">{project.name}</h2>
             <p className="text-secondary">{project.role}</p>
           </div>
-          <p>{project.summary}</p>
-          <p>{project.ownership}</p>
-          {project.work.map((item) => <p key={item}>{item}</p>)}
-          <p className="text-sm text-secondary">Tools: {project.stack}</p>
+          <div className="project-copy">
+            <p className="text-base font-normal">{project.summary}</p>
+            <p className="text-base font-normal">{project.ownership}</p>
+            {project.work.map((item) => <p key={item} className="text-base font-normal">{item}</p>)}
+            <p className="text-base font-normal">Tools: {project.stack}</p>
+          </div>
           {project.link && (
-            <ExternalLink link={project.link} target="_blank" icon>
-              {project.linkText}
-            </ExternalLink>
+            <div className="flex flex-wrap items-center gap-2">
+              You can visit the project at{" "}
+              <ExternalLink link={project.link} target="_blank" icon>
+                {project.name}
+              </ExternalLink>
+            </div>
           )}
         </motion.article>
       ))}
